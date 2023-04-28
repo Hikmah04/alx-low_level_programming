@@ -7,28 +7,36 @@
  * and for the multipjles of five print Buzz
  * Return: Always 0 (Success)
  */
-int main(void)
-{
-	int i;
 
-	for (i = 1; i <= 100; i++)
+int main(void)
+
+{
+
+	int k;
+
+	for (k = 1; k <= 100; k++)
 	{
-		if (i % 3 == 0 && i % 5 != 0)
+		if ((k % 3 == 0) && (k % 5==0))
 		{
-			printf(" Fizz");
-		} else if (i % 5 == 0 && i % 3 != 0)
+			printf("FizzBuzz");
+		}
+		else if (k % 3 == 0)
 		{
-			printf(" Buzz");
-		} else if (i % 3 == 0 && i % 5 == 0)
+			printf("Fizz");
+		}
+		else if (k % 5 == 0)
 		{
-			printf(" FizzBuzz");
-		} else if (i == 1)
+			printf("Buzz");
+		}
+		else
 		{
-			printf("%d", i);
-		} else
+			printf("%d", k);
+		}
+		if (k != 100)
 		{
-			printf(" %d", i);
+			printf(" ");
 		}
 	}
-	printf('\n');
-}
+	printf("\n");
+	return (0);
+				}
